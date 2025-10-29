@@ -24,9 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     flash()->push('mensagem', 'Registrado com sucesso!');
 
-    header('location: /login');
+    view('registrar');
     exit();
 };
 
-header('location: /login');
+view('registrar');
 exit();
