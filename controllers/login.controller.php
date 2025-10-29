@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         flash()->push('mensagem', 'Seja bem vindo ' . $usuario->nome . '!');
 
-        header('Location: /');
+        header('Location: /dashboard');
 
         exit();
 

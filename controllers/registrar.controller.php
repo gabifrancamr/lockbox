@@ -8,8 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'senha' => ['required', 'min:8', 'max:30', 'strong'],
     ], $_POST);
 
-    if($validacao->naoPassou('registrar')) {
-        header('location: /login');
+    if($validacao->naoPassou()) {
+        view('registrar');
         exit();
     }
 
@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     flash()->push('mensagem', 'Registrado com sucesso!');
 
-    view('registrar');
+    header('location: /login');
     exit();
 };
 
