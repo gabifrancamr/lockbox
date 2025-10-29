@@ -51,3 +51,13 @@ function auth() {
 
     return $_SESSION['auth'];
 }
+
+function old($campo) {
+    $post = $_POST;
+
+    if(isset($post[$campo])) {
+        return $post[$campo];
+    }
+
+    return '';
+}
