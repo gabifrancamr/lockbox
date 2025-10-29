@@ -22,7 +22,7 @@
                                 <span class="label-text text-black">Nome</span>
                             </div>
 
-                            <input type="text" class="input input-bordered w-full max-w-xs bg-white" />
+                            <input type="text" class="input input-neutral w-full max-w-xs bg-white" />
                         </label>
 
                         <label class="form-control">
@@ -30,7 +30,7 @@
                                 <span class="label-text text-black">E-mail</span>
                             </div>
 
-                            <input type="text" class="input input-bordered w-full max-w-xs bg-white" />
+                            <input type="text" class="input input-neutral w-full max-w-xs bg-white" />
                         </label>
 
                         <label class="form-control">
@@ -38,7 +38,7 @@
                                 <span class="label-text text-black">Confirme seu Email</span>
                             </div>
 
-                            <input type="text" class="input input-bordered w-full max-w-xs bg-white" />
+                            <input type="text" class="input input-neutral w-full max-w-xs bg-white" />
                         </label>
 
                         <label class="form-control">
@@ -46,7 +46,7 @@
                                 <span class="label-text text-black">Senha</span>
                             </div>
 
-                            <input type="password" class="input input-bordered w-full max-w-xs bg-white" />
+                            <input type="password" class="input input-neutral w-full max-w-xs bg-white" />
                         </label>
 
                         <div class="card-actions">
