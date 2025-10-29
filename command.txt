@@ -1,0 +1,13 @@
+php -S localhost:8000 -d auto_prepend_file=server.php -t public/
+
+🎯 Propósito: Iniciar um servidor web local para desenvolvimento
+
+🔍 Explicação do comando:
+
+php -S localhost:8000: Inicia o servidor embutido do PHP na porta 8000
+
+-d auto_prepend_file=server.php: Configura o PHP para incluir automaticamente o server.php antes de cada requisição
+
+-t public/: Define a pasta public como diretório raiz do servidor
+
+Por que usar auto_prepend_file? Para executar código comum antes de cada página (como configurações, sessões, etc.)
