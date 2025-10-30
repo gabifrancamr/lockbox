@@ -14,6 +14,10 @@ function base_path($path){
     return __DIR__ . '/../'. $path;
 }
 
+function redirect($uri) {
+    return header('location: ' . $uri);
+}
+
 function view($view, $data = [])
 {
     
