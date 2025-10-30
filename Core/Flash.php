@@ -1,5 +1,7 @@
 <?php
 
+namespace Core; //Isso aparece dentro de um arquivo PHP e define o “endereço” da classe.
+
 /**
  * O Flash é uma forma de armazenar mensagens temporárias na sessão ($_SESSION) — 
  * mensagens que você quer exibir apenas uma vez (na próxima requisição) e 
