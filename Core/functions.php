@@ -2,7 +2,15 @@
 
 use Core\Flash;
 
+// Função que retorna o caminho absoluto até um arquivo do projeto.
+// Ela serve para montar o caminho completo de forma segura, 
+// independentemente de onde o código esteja sendo executado.
 function base_path($path){
+    // __DIR__ é o diretório onde este arquivo (functions.php) está.
+    // '../' sobe uma pasta (volta da pasta /Core para a raiz do projeto)
+    // e então concatena o caminho passado ($path).
+    // Exemplo: base_path('Core/Database.php')
+    // Retorna algo como: "/caminho/do/projeto/Core/Database.php"
     return __DIR__ . '/../'. $path;
 }
 
