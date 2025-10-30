@@ -11,6 +11,8 @@ class DashboardController {
             exit();
         }
 
-        echo "Estou logado ". auth()->nome;
+        return view('dashboard', [
+            'user' => auth()
+        ]);
     }
 }
