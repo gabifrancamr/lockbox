@@ -6,12 +6,12 @@ class LoginController
 {
     public function index()
     {
-        echo "logincontroller.index";
+        echo "LoginController.index";
     }
 
 
     public function login()
     {
-        echo "logincontroller.login";
+        echo "LoginController.login";
     }
 }

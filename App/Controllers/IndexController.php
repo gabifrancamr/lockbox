@@ -6,6 +6,6 @@ class IndexController
 {
     public function __invoke()
     {
-        echo "indexcontroller.__invoke";
+        echo "IndexController.__invoke";
     }
 }
