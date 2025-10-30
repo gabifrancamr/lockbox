@@ -54,7 +54,7 @@ function flash() {
 }
 
 function config($chave = null) {
-    $config = require base_path('config.php');
+    $config = require base_path('/config/config.php');
 
     if(strlen($chave) > 0) {
         return $config[$chave];
