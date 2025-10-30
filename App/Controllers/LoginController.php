@@ -6,7 +6,7 @@ class LoginController
 {
     public function index()
     {
-        echo "LoginController.index";
+        return view('login');
     }
 
 

@@ -1,8 +1,11 @@
 <?php
 
 use Core\Route;
+use App\Controllers\DashboardController;
 use App\Controllers\LoginController;
 use App\Controllers\IndexController;
+use App\Controllers\LogoutController;
+use App\Controllers\RegisterController;
 
 (new Route())
     ->get('/', IndexController::class)
@@ -10,16 +13,10 @@ use App\Controllers\IndexController;
     ->get('/login', [LoginController::class, 'index'])
     ->post('/login', [LoginController::class, 'login'])
 
+    ->get('/dashboard', DashboardController::class)
+    ->get('/logout', LogoutController::class)
+
+    ->get('/registrar', [RegisterController::class, 'index'])
+    ->post('/registrar', [RegisterController::class, 'register'])
+
     ->run();
-
-    die();
-
-$controller = str_replace('/', '', parse_url($_SERVER['REQUEST_URI'])['path']); // parse_url($_SERVER['REQUEST_URI'])['path'] = Aqui ele pega só o caminho da URL, sem a query string.
-
-if (!$controller) $controller = 'index';
-
-if (! file_exists("../controllers/{$controller}.controller.php")) {
-    abort(404);
-};
-
-require "../controllers/{$controller}.controller.php";
