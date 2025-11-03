@@ -1,6 +1,6 @@
 <?php $validacoes = flash()->get('validacoes'); ?>
 
-<div class="bg-base-300 rounded-l-box w-56">
+<div class="bg-base-300 rounded-l-box w-56 overflow-hidden">
     <div class="bg-base-200 p-4">+ Nova Nota</div>
 </div>
 
