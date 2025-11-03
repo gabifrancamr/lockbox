@@ -9,7 +9,7 @@ class RegisterController
 {
     public function index()
     {
-        return view('registrar');
+        return view('registrar', template: 'guest');
     }
 
     public function register()
@@ -21,7 +21,7 @@ class RegisterController
         ], $_POST);
 
         if ($validacao->naoPassou()) {
-            return view('registrar');
+            return view('registrar', template: 'guest');
         }
 
         $database = new Database(config('database'));

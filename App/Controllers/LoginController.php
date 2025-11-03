@@ -10,7 +10,7 @@ class LoginController
 {
     public function index()
     {
-        return view('login');
+        return view('login', template: 'guest');
     }
 
 
@@ -28,7 +28,7 @@ class LoginController
 
 
         if ($validacao->naoPassou()) {
-            return view('login');
+            return view('login', template: 'guest');
         }
 
         $database = new Database(config('database'));
@@ -47,7 +47,7 @@ class LoginController
         if (! ($usuario && password_verify($_POST['senha'], $usuario->senha))) {
             flash()->push('validacoes', ['email' => ['Usuário ou senha estão incorretos!']]);
 
-            return view('login');
+            return view('login', template: 'guest');
         }
 
         $_SESSION['auth'] = $usuario;

@@ -18,7 +18,7 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <div class="card-title">Faça o seu login</div>
+                        <div class="card-title text-xl">Faça o seu login</div>
 
                         <?php if ($mensagem = flash()->get('mensagem')): ?>
 
